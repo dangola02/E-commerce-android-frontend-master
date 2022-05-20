@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/lighter_gray"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".ProdactDetails">-->
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/apperBar"-->
+<!--        >-->
+<!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"-->
+<!--            app:expandedTitleTextAppearance="@style/expandedBarTextStyle"-->
+<!--            app:contentScrim="@color/dark_gray"-->
+<!--            app:title="Item Name" >-->
+
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:background="@color/black"-->
+<!--                app:titleTextColor="@color/white"-->
+<!--                >-->
+
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+<!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"-->
+<!--        >-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lighter_gray"
+        android:orientation="vertical"
+        tools:context=".ProdactDetails"
+         >
+
+    <HorizontalScrollView
+        android:id="@+id/big_header_image_details"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:transitionName="image_details_transition"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarStyle="insideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:transitionName="Image_transition"
+                android:src="@drawable/image6" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/image5" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_below="@id/big_header_image_details"
+        android:id="@+id/item_details_top_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/item_details_addTOCard"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lighter_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/prodact_detatils_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="sans-serif-thin"
+                        android:padding="10dp"
+                        android:shadowRadius="@android:integer/config_shortAnimTime"
+                        android:text="Size"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="sans-serif-thin"
+                        android:padding="10dp"
+                        android:shadowRadius="@android:integer/config_shortAnimTime"
+                        android:text="Color"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prodact_detatils_filter"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/project_details_evaluate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/project_details_type"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_outline_24" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/prodact_detatils_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/project_details_name"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="5dp"
+                        android:text="$19.34"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:textColor="@color/primary"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/project_details_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/project_details_name"
+                        android:padding="6dp"
+                        android:text="Yellow Hody"
+                        android:textColor="@color/dark_gray" />
+
+                    <TextView
+                        android:id="@+id/project_details_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="5dp"
+                        android:text="HandM"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/project_details_describtion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/project_details_evaluate"
+                        android:text="Shoet Yellow Hoday have vaery good materall " />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/item_details_addTOCard"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:outlineAmbientShadowColor="@color/dark_gray" >
+                <Button
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="ADD TO MY CART"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:background="@drawable/button_bg"
+                    app:backgroundTint="@color/primary"
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+

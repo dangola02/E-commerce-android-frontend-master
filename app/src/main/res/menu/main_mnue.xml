@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item android:id="@+id/home"
+            android:title="HOME"
+            android:icon="@drawable/home"
+            app:cnb_backgroundColor='@color/dark_gray'
+            />
+
+        <item android:id="@+id/shop"
+            android:title="SHOP"
+            android:icon="@drawable/cart" />
+
+        <item android:id="@+id/bage"
+            android:title="BAGE"
+            android:icon="@drawable/bag" />
+
+
+        <item android:id="@+id/prof"
+            android:title="PROF"
+            android:icon="@drawable/accountcircle" />
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    android:background="@color/cardview_light_background"
+    >
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:id="@+id/main_lottie"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="100dp"
+        app:lottie_fileName="mainsplashlottie.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECOMMERCE"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here Where You Can Find What You Want"
+        android:layout_gravity="center"
+        android:textColor="@color/dark_gray"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>

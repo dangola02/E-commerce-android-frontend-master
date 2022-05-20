@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="10dp"
+    android:id="@+id/onBoarding_parent"
+    android:background="@color/white">
+    
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+       <RelativeLayout
+           android:id="@+id/onBoarding_buttons_layout"
+           android:layout_width="match_parent"
+           android:layout_height="130dp"
+           android:layout_above="@+id/onBoarding_dots"
+           android:visibility="gone"
+           >
+           <Button
+               android:id="@+id/onBoarding_login_buttom"
+               android:layout_width="match_parent"
+               android:layout_height="43dp"
+               android:background="@drawable/button_bg"
+               android:text="Login now"
+               android:textColor="@color/white"
+               android:layout_alignParentTop="true"
+               android:textSize="20dp"
+               android:gravity="center"
+               android:layout_marginHorizontal="12dp"
+               android:layout_above="@+id/onBoarding_loginLater_button"
+               android:layout_marginBottom="15dp"
+               android:backgroundTint="@color/primary"/>
+           <Button
+               android:id="@+id/onBoarding_loginLater_button"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:text="Sign in Later"
+               android:textColor="@color/dark_gray"
+               android:textSize="20dp"
+               android:gravity="center"
+               android:layout_marginHorizontal="12dp"
+               android:layout_marginBottom="15dp"
+               android:backgroundTint="@color/white"
+               android:layout_alignParentBottom="true"
+               android:background="@color/white"
+               />
+       </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/onBoarding_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
